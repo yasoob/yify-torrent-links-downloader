@@ -19,7 +19,7 @@ def extract_links(soup):
         file.close()
         
 
-while page < 140:
+while page < 142:
     url = "http://yify-torrents.com/browse-movie/0/All/All/0/latest/%s"%str(page)
     request= urllib.urlopen(url)
     response = request.read()
