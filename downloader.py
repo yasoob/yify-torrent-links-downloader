@@ -11,8 +11,6 @@ def extract_links(soup):
     link = soup.findAll('a', {'class' : 'std-btn-small mleft torrentDwl'} , href= re.compile('.torrent'))
     for i in link:
         y =  i.get('href') + '\n' + '#' + '-'*100 + '#' + '\n'
-        #print y
-        #print '#' + '-'*110 + '#'
         file = open('links.txt', 'a')
         file.write(y,)
         count = count + 1
